@@ -11,4 +11,12 @@ let getJohnProfile = () => {
     );
   });
 };
-// Start coding here
+const asyncFunction = async () =>{
+  try{
+  const johnProfile = await getJohnProfile();
+  console.log(johnProfile);
+  }catch(error){
+    console.log("err",error); 
+  }
+ }
+asyncFunction()
