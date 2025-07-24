@@ -33,7 +33,7 @@ let getJohnOrders = () => {
 };
 
 getJohnProfile()
-then((resolve) => {
+.then((resolve) => {
 console.log(resolve);})
 .then(getJohnOrders)
 .then((resolve) => {
